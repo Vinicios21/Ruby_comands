@@ -48,3 +48,17 @@ rails s = rails server: usado para iniciar o servidor de desenvolvimento -b 0.0.
 
 ## rails generate controller <pagina_inicial> ou rails g controller <pagina_inicial>
 rails: comando usado para interagir com o ambiente de desenvolvimento Ruby on Rails. generate: subcomando do Rails usado para gerar código automaticamente. Quando usa-se generate, está instruindo o Rails a criar ou gerar alguma coisa, como um modelo, um controlador, um scaffold.
+
+## rails generate scaffold campo1:tipo ...
+scaffold: indica que está sendo criando uma estrutura completa de CRUD (Create, Read, Update, Delete) para um recurso em sua aplicação. Gera automaticamente uma Model, um controller, view e migration de banco de dados : é o nome do que está sendo gerado(tabela do banco, model, controller, view) campo1:tipo : campos da tabela com sua respectiva tipagem. Quando não é citada a tipagem, por default atribui-se o tipo String
+
+## rails dbconsole
+dbconsole: usado para iniciar um console de banco de dados diretamente a partir do Rails, permitindo que se executem comandos SQL e interaja com o banco de dados sem sair do ambiente Rails.
+
+## Task
+rails -T db
+É uma forma de listar todos os comandos relacionados a banco de dados.
+
+## rails db:
+rails: comando que indica para o cmd que você quer usar as funções do framework rails db: categoria/agrupamento de tasks do tipo database
+
