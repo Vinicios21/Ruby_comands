@@ -1,1 +1,50 @@
-# Ruby_comands
+# Rails Cheat Sheet!
+Este Cheat Sheet abrange alguns dos comandos essenciais e ou utilizados neste projeto.
+
+## Vagrant
+Vagrant é comando que indica para que você quer usar ou gerenciar o ambientes de desenvolvimento virtual(VM)
+
+## up
+Usado para iniciar uma máquina virtual definida no Vagrantfile
+
+## halt
+Para parar a máquina virtual
+
+## suspend
+Para pausar a máquina virtual
+
+## ssh
+O Vagrant estabelecerá uma conexão SSH com a máquina virtual e você será logado na máquina virtual automaticamente Depois de executar o vagrant ssh, você terá acesso ao shell da máquina virtual e poderá interagir com ela como se estivesse trabalhando diretamente nessa máquina. É útil para executar comandos, realizar tarefas de configuração e verificar arquivos dentro da máquina virtual.
+
+## gem install
+Inicia o sistema de gerenciamento de gemas (pacotes Ruby) para instalar uma gema
+
+## rails
+Nome da gema que desejamos instalar, neste caso, o Ruby on Rails.
+
+## -v 5.2.8
+Especifica a versão exata do Rails que será instalada
+
+## RVM
+O RVM (Ruby Version Manager) é uma ferramenta que permite gerenciar várias versões do Ruby no sistema.
+
+## rvm list
+Esse comando lista as versões do Ruby que estão instaladas em seu sistema através do RVM.
+
+## rvm list known
+Lista as versões do Ruby conhecidas disponíveis para instalação.
+
+## rvm install 2.3
+Instala uma versão específica do Ruby, neste caso, a versão 2.3
+
+## rvm use 2.6
+Instrui o RVM a usar a versão especificada do Ruby (2.6) como a versão ativa. Isso significa que, sempre que você executar um comando Ruby, ele usará a versão 2.6 que você especificou.
+
+## rails 5.2 new -d postgresql
+rails: comando que indica para o cmd que você quer usar as funções do framework rails 5.2: criar o aplicativo usando a versão 5.2 do Ruby on Rails new: novo projeto : nome do projeto -d postgresql: indica que desejamos usar o banco de dados PostgreSQL como o banco de dados padrão para a aplicação Rails O Rails irá gerar a estrutura inicial do projeto, instalar as dependências e configurar o ambiente
+
+## rails s -b 0.0.0.0 -e development
+rails s = rails server: usado para iniciar o servidor de desenvolvimento -b 0.0.0.0: É uma configuração que faz com que o servidor Rails escute em todas as interfaces de rede disponíveis. O servidor estará acessível não apenas a partir do localhost (127.0.0.1), mas também de outras máquinas na mesma rede -e (development, test, production): estamos instruindo o servidor a iniciar no ambiente especificado.
+
+## rails generate controller <pagina_inicial> ou rails g controller <pagina_inicial>
+rails: comando usado para interagir com o ambiente de desenvolvimento Ruby on Rails. generate: subcomando do Rails usado para gerar código automaticamente. Quando usa-se generate, está instruindo o Rails a criar ou gerar alguma coisa, como um modelo, um controlador, um scaffold.
